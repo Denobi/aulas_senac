@@ -1,0 +1,118 @@
+body,h1,h2,p,ul{
+    margin: 10px;
+    padding: 10px;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+header{
+    background: linear-gradient(to right, #4a90e2,  #9013fe);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: slide-in 1s ease-out;
+
+
+}
+@keyframes slide-in {
+    from{
+        transform: translateY(-100%);
+        background: linear-gradient(to right, #9013fe ,#4a90e2 );
+         opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+        background: linear-gradient(to right, #4a90e2,  #9013fe);
+    }
+}
+nav ul{
+    list-style: none;
+    background-color: #444;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+nav ul li{
+    display: inline;
+    margin:0 15px;
+    
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+nav ul li a:hover{
+    font-weight: 400;
+    color: #4a90e2;
+    text-shadow: 0 0 5px rgba(255, 230, 0, 0.9);
+}
+
+main{
+    padding: 30px;
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 900px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+main:hover{
+    
+    transform: scale(1.02);
+}
+img{
+    max-width: 100%;
+    display: block;
+    margin: 20px 0;
+}
+
+.formulario-contato{
+display: flex;
+flex-direction: column;
+}
+input,textarea{
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    outline: none;
+}
+
+input:focus,textarea:focus{
+    border-color: #9013fe;
+
+}
+button.evento-mouse{
+    padding: 15px 30px;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+
+}
+button.evento-mouse:hover{
+    background-color: #9013fe;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+
+}
+footer{
+    text-align: center;
+    padding: 15px 0;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+    border-radius: 0 0 10px 10px ;
+
+}
