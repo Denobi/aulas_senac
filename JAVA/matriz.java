@@ -4,7 +4,7 @@ import java.util.Scanner;
 /**
  * vetor
  */
-public class vetor {
+public class matriz {
 
     public static void main(String[] args) {
 
