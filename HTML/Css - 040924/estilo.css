@@ -116,3 +116,45 @@ footer{
     border-radius: 0 0 10px 10px ;
 
 }
+
+.carrossel{
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.carrossel-container{
+    display: flex;
+    transition: trasnform 0.5s ease-in-out;
+}
+
+.carrossel-imagem{
+    min-width: 100%;
+    box-sizing: border-box;
+
+}
+.carrossel img{
+    width: 100%;
+    display: block;
+    
+}
+.carrossel-proximo, .carrossel-anterior{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 1.3rem;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 100%;
+    z-index: 1;
+    width: 50px;
+}
+.carrossel-anterior{
+    left: 10px;
+}
+.carrossel-proximo{
+    right: 10px;
+}
