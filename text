@@ -1,0 +1,30 @@
+public class Aula_06 {
+
+    public static void main(String[] args) {
+        String nome = "CARAM";
+        nome = nome.concat("BOLA");
+        int tamanho = nome.length();      // RETORNA O TAMANHO DA STRING - > INT
+        nome = nome.toLowerCase();    // CONVERTE PARA TODAS EM MINUSCULAS -> STRING	
+        nome = nome.toUpperCase();   //  CONVERTE PARA TODAS EM MAIUSCULAS-> STRING	
+        String frase= "abcxx12;Meias Soquete;4500;2.97";
+        String vt[] = frase.split(";");    // QUEBRA A STRING EM UM CARACTER ESPECIAL TRANSFORMANDO A MESMA EM UM VETOR DE STRING -> STRING[]
+        
+        for(int i = 0; i<vt.length;i++)
+            System.out.println(i+" "+vt[i]);
+        
+        String word = "  SOCORRO MEU CACHORRO FUJIU";
+        word = word.replace("RR", "X");			// TROCA A STRING VELHA PELA NOVA -> STRING
+        
+        String triangulo ="";
+        word = word.trim();						// REMOVE ESPACOS EM BRANCO A ESQUERDA E DIREITA
+        
+        for(int i = 0; i<word.length();i++)
+        {
+            triangulo+=word.charAt(i);
+            System.out.println(triangulo);
+        }
+        
+        
+
+    } 
+}
