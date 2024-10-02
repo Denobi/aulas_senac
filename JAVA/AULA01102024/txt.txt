@@ -1,0 +1,48 @@
+
+
+public static void main(String[] args) {
+        
+       double v[] = {1.55, 1.43, 1.8, 1.81, 1.7, 1.69};
+       int    x[] = {19, 18, 17, 24, 16, 15};
+       String b[] = {"Alice","Bia","Zenon","Daniel","Fabio","Carlos"};
+       
+        
+        for(int i = 0;i<v.length-1; i++) 
+        {
+           for(int j = 0; j < v.length - 1 - i; j++) 
+           {
+              if(b[j].compareTo(b[j + 1])>0)//if(v[j]>v[j + 1]) if(b[j].compareTo(b[j + 1])<0)
+              {
+                 double aux = v[j];
+                 int    auxi = x[j];
+                 String auxT = b[j];
+                    
+                 v[j] = v[j + 1];
+                 b[j] = b[j+1];
+                 x[j] = x[j+1];
+              
+                v[j + 1] = aux;
+                b[j+1] = auxT;
+                x[j+1] = auxi;
+             
+           }
+      }
+    }
+        
+    for(int i =0;i<v.length;i++)
+         System.out.println(x[i]+"\t"+b[i]+"\t\t"+v[i]);
+        
+        
+    }
+
+
+houve um concurso publico na cidade de partopolis.
+ neste concurso participaram 1500 concursados no qual 
+ realizaram 3 provas, 1 de matemãtica,1 de português
+ e 1 de conhecimento especifico. A nota varia para cada
+  prova de 0 a 100 em multiplos de 10 e cada
+ prova tem o seguinte peso: 
+ matematica 2 portugues 3 conhecimento especifico 4. 
+ Voce deve construir um programa que:
+ 1 - Calcule a media ponderada dos concursados
+ 2 - Mostrar em ordem decrescente a ordem dos 10 primeiros colocados
