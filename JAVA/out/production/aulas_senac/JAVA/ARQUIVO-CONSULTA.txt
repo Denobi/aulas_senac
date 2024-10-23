@@ -1,0 +1,129 @@
+Aqui está uma lista com os principais métodos de manipulação de strings em Java:
+
+length()
+
+Retorna o ta
+Exemplo: int tamanho = str.length();
+charAt(int index)
+
+Retorna o caractere na posição especificada.
+Exemplo: char caractere = str.charAt(0);
+substring(int beginIndex) e substring(int beginIndex, int endIndex)
+
+Retorna uma parte da string.
+Exemplo: String parte = str.substring(2);
+Exemplo: String parte = str.substring(2, 5);
+indexOf(String str)
+
+Retorna o índice da primeira ocorrência da string especificada.
+Exemplo: int indice = str.indexOf("a");
+lastIndexOf(String str)
+
+Retorna o índice da última ocorrência da string especificada.
+Exemplo: int indice = str.lastIndexOf("a");
+contains(CharSequence s)
+
+Verifica se a string contém a sequência especificada.
+Exemplo: boolean contem = str.contains("abc");
+toLowerCase() e toUpperCase()
+
+Converte a string para minúsculas ou maiúsculas.
+Exemplo: String minuscula = str.toLowerCase();
+Exemplo: String maiuscula = str.toUpperCase();
+replace(CharSequence target, CharSequence replacement)
+
+Substitui todas as ocorrências de uma sequência por outra.
+Exemplo: String novaString = str.replace("a", "o");
+trim()
+
+Remove espaços em branco no início e no final da string.
+Exemplo: String semEspacos = str.trim();
+split(String regex)
+
+Divide a string com base em uma expressão regular.
+Exemplo: String[] partes = str.split(",");
+equals(Object anotherObject)
+
+Verifica se duas strings são iguais.
+Exemplo: boolean igual = str.equals(outraString);
+equalsIgnoreCase(String anotherString)
+
+Compara duas strings ignorando diferenças entre maiúsculas e minúsculas.
+Exemplo: boolean igual = str.equalsIgnoreCase(outraString);
+isEmpty()
+
+Verifica se a string está vazia.
+Exemplo: boolean vazia = str.isEmpty();
+startsWith(String prefix) e endsWith(String suffix)
+
+Verifica se a string começa ou termina com uma sequência específica.
+Exemplo: boolean comeca = str.startsWith("abc");
+Exemplo: boolean termina = str.endsWith("xyz");
+valueOf()
+
+Converte diferentes tipos de dados (como int, float, char, etc.) em uma string.
+Exemplo: String valor = String.valueOf(123);
+Esses métodos são bastante úteis para realizar operações comuns com strings em Java.
+
+
+--------------
+
+Vetor (Array Unidimensional)
+Um vetor é uma estrutura de dados que armazena uma sequência de elementos do mesmo tipo, organizados em uma única dimensão. Cada elemento é identificado por um índice, que começa em 0. Os vetores são usados para armazenar conjuntos de valores relacionados de forma sequencial.
+
+Características:
+Armazena elementos do mesmo tipo.
+Acesso rápido aos elementos por meio de índices.
+O tamanho é fixo e definido no momento da criação.
+Exemplo em Java:
+java
+Copiar código
+int[] numeros = {1, 2, 3, 4, 5};
+System.out.println(numeros[2]);  // Saída: 3
+Quando usar:
+Quando você precisa armazenar uma coleção de dados em uma única dimensão, como notas de uma turma, temperaturas diárias ou IDs de produtos.
+Matriz (Array Multidimensional)
+Uma matriz é uma estrutura de dados que armazena elementos em várias dimensões (geralmente duas). Na maioria das vezes, uma matriz é representada como uma tabela ou grade, onde cada elemento é identificado por dois ou mais índices (linha e coluna).
+
+Características:
+Armazena elementos do mesmo tipo.
+Acesso aos elementos é feito por mais de um índice (linha e coluna).
+Tamanho fixo e definido no momento da criação.
+Exemplo em Java (matriz 2D):
+java
+Copiar código
+int[][] matriz = {
+    {1, 2, 3},
+    {4, 5, 6},
+    {7, 8, 9}
+};
+System.out.println(matriz[1][2]);  // Saída: 6
+Quando usar:
+Quando você precisa representar dados em duas ou mais dimensões, como uma tabela de notas, mapa de coordenadas ou uma planilha.
+Função (Método)
+Uma função (ou método, dependendo da linguagem) é um bloco de código que pode ser reutilizado e é projetado para realizar uma tarefa específica. As funções recebem parâmetros (opcionalmente), executam uma operação e podem retornar um valor.
+
+Características:
+Modulariza o código, facilitando o reaproveitamento.
+Pode receber parâmetros para personalizar sua execução.
+Pode ou não retornar um valor.
+Exemplo em Java:
+java
+Copiar código
+public class Main {
+    public static void main(String[] args) {
+        int resultado = soma(3, 5);
+        System.out.println(resultado);  // Saída: 8
+    }
+
+    // Função que retorna a soma de dois números
+    public static int soma(int a, int b) {
+        return a + b;
+    }
+}
+Quando usar:
+Quando há a necessidade de encapsular uma operação ou cálculo que pode ser usado repetidamente em diferentes partes do programa.
+Para melhorar a legibilidade, organização e manutenção do código.
+Diferenças e Relações:
+Vetores e matrizes são estruturas de dados usadas para armazenar conjuntos de elementos, enquanto funções são blocos de código reutilizáveis.
+Funções podem ser usadas para manipular vetores e matrizes, como percorrê-los, modificar seus elementos ou calcular valores agregados (como somar todos os elementos de um vetor).
