@@ -1,0 +1,8 @@
+
+	- Não usar swing
+	- Elabore um algoritmo baseado nas aulas de algoritmo 2
+	- Requisitos basicos:
+	Ultilização de matriz/vetor
+	conceito de registro, funçao e procedimento
+	O projeto deve realizar UM CRUD e no minimo 3 relatorios
+	
