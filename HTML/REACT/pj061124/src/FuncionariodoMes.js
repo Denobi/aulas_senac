@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import "./FuncionariodoMes.css"
 
 
 function FuncionariodoMes ({foto,idFunc,idNomeFunc}){
@@ -23,11 +24,11 @@ function FuncionariodoMes ({foto,idFunc,idNomeFunc}){
             <h3>Nome: {idNomeFunc}</h3>
         }
         {
-            <button onClick={ChamarBotao}>Curtir</button>
+            <button onClick={ChamarBotao} className={"Curtir"}>Curtir</button>
         }
         {
             
-            <button onClick={ChamarBotaoDesc}>Descurtir</button>
+            <button onClick={ChamarBotaoDesc} className={"Descurtir"}>Descurtir</button>
         }
 
         {

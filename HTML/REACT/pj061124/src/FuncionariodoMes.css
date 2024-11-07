@@ -1,0 +1,19 @@
+button{
+    width: 86px;
+    height: 35px;
+    margin-right: 32px;
+    border: none;
+    border-radius: 16px;
+    color: #fff;
+}
+button.Curtir{
+    background-color: blue;
+    
+}
+button.Descurtir{
+    background-color: firebrick;
+
+}
+button:hover{
+    transform: scale(1.1);
+}
