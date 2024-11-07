@@ -5,4 +5,68 @@
 	Ultilização de matriz/vetor
 	conceito de registro, funçao e procedimento
 	O projeto deve realizar UM CRUD e no minimo 3 relatorios
-	
+
+
+	Classe Aluno:
+
+    public class Aluno {
+        int matricula;
+        String nome;
+        int idade;
+
+        public Aluno(int matricula, String nome, int idade) {
+            this.matricula = matricula;
+            this.nome = nome;
+            this.idade = idade;
+        }
+
+        void imprimirAluno(){
+            System.out.println("RA:"+matricula+"\tnome:"+nome+"\tidade:"+idade);
+        }
+
+    }
+
+    Classe Principal:
+
+    public class Aula_12 {
+
+        public static void main(String[] args) {
+
+            ArrayList<Aluno> classe = new ArrayList<Aluno>();  // Definição do ArrayList
+            classe.add(new Aluno(134,"Pedro de Lara",21));       // método para adicionar elementos no ArrayList
+            classe.add(new Aluno(34,"Maria Helena",20));
+            classe.add(new Aluno(88,"Marcio Palmeiras", 19));
+
+            for(int i=0;i<classe.size();i++)          //iteração para listar os elementos do ArrayList
+            {
+                classe.get(i).imprimirAluno();    //método para retornar um objeto Aluno em uma determinada posição do ArrayList
+            }
+
+            for(int i=0;i<classe.size();i++)
+            {
+                if(classe.get(i).matricula == 134)
+                   classe.remove(i);                                //método para remover um objeto Aluno dado uma posição do ArrayList
+            }
+            System.out.println("---------------------------------");
+            for(int i=0;i<classe.size();i++)
+            {
+                classe.get(i).imprimirAluno();
+            }
+
+            for(int i=0;i<classe.size();i++)
+            {
+                 if(classe.get(i).matricula == 34)
+                   classe.set(i, new Aluno(34,"Maria Elena",19));    //método para substituir em uma determinada posição um objeto Aluno
+
+            }
+
+            classe.clear();                                                     //método para limpar em sua totalidade um ArrayList
+            System.out.println(classe.size());
+
+            if(!classe.isEmpty())                                         //método que verifica se a ArrayList está vazia
+                  classe.remove(0);
+            else
+                System.out.println("sem elementos");
+
+        }
+    }
