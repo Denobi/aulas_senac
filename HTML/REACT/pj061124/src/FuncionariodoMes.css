@@ -17,3 +17,19 @@ button.Descurtir{
 button:hover{
     transform: scale(1.1);
 }
+
+.divVoto{
+    width: 400px;
+    height: 500px;
+    padding: 15px;
+    background-color: #FFF4B7;
+    border-radius: 30px;
+    text-align: center;
+}
+p{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+img{
+    border-radius: 16px;
+}

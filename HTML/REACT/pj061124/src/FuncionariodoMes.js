@@ -12,7 +12,7 @@ function FuncionariodoMes ({foto,idFunc,idNomeFunc}){
     }
     return(
 
-      <div>
+      <div className='divVoto'>
         {
 
         <img src={foto}/>
