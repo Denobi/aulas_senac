@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CineFãs - Página Inicial</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+  <script src="JS/api.js"></script>
+</head>
+<body >
+  <header>
+    <h1>Bem-vindo ao CineFãs</h1>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="atores.html">Atores</a>
+        <a href="contatos.html">Contato</a>
+        <a href="comentarios.html">Comentarios</a>
+      
+    </nav>
+  </header>
+  <main>
+
+      <section class="banner" >
+        <div class="movie-banner">
+    
+            <h1>Explore o Mundo dos Atores</h1>
+            <p>Descubra informações detalhadas sobre seus atores favoritos.</p>
+        </div>
+       
+      </section>
+    
+      <section id="featured-actors">
+        <h2>Um Pouco sobre nós</h2>
+        <div>
+            <p>O projeto CineFãs é uma plataforma digital voltada para amantes do cinema. Ele tem como objetivo principal proporcionar um espaço interativo onde os usuários podem encontrar informações detalhadas sobre filmes, incluindo sinopses, avaliações e, principalmente, detalhes sobre os atores e diretores.</p>
+            <p>Com uma interface simples e intuitiva, o CineFãs permite aos cinéfilos explorar o universo cinematográfico, oferecendo uma experiência de busca rápida e eficaz para conhecer o elenco e os detalhes de suas produções favoritas. Utilizando dados da API OMDb, a plataforma é atualizada constantemente para garantir informações precisas e completas sobre os filmes mais populares, clássicos e lançamentos.</p> 
+            <p>Além disso, o CineFãs pretende ser um espaço de interação, onde os usuários podem compartilhar opiniões, sugestões e comentários sobre os filmes, criando uma comunidade ativa de fãs de cinema.</p>
+        </div>
+      </section>
+      <section class="carrosselsArea" onload="searchMovie()">
+        <div class="carousel-container">
+            <div id="movie-slider" class="carousel">
+             
+            </div>
+            <!-- Botões de navegação -->
+            <div class="carousel-buttons">
+              <button onclick="prevSlide()">&#10094;</button>
+              <button onclick="nextSlide()">&#10095;</button>
+            </div>
+          </div>
+      </section>
+  </main>
+
+  
+ 
+</body>
+</html>
